@@ -17,7 +17,6 @@ class Tabs {
 
   selectFirst() {
     document.querySelector('.' + Tabs.CLASS_HEADER).click();
-
   }
 
   setStyles() {
@@ -32,6 +31,7 @@ class Tabs {
   setEvents() {
     this.#tabsEl.addEventListener('click', (e) => this.onRootElementClick(e));
   }
+
   onRootElementClick(e) {
     if (e.target.classList.contains(Tabs.CLASS_HEADER)) {
       const headerEl = e.target;
