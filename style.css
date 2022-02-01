@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.tab-item {
+    margin-bottom: 5px;
+    width:  200px;
+}
+
+.tab-item-header {
+    background-color: rgb(238, 219, 124);
+    border: .1em solid skyblue;
+    text-align: center;
+}
+
+#tabs {
+    margin-left: 5em;
+    display: inline-flex;
+}
+
+.tab-item-content {
+    height: 50px;
+    display: none;
+}
+
+.header-active {
+    border-bottom-color: rgb(246 241 215);
+    background-color: rgb(246 241 215);
+}
+
+.open {
+    padding: 1em;
+    border-radius: 0 0 1em 1em;
+    background-color: rgb(246 241 215);
+    width: 600px;
+    border: .1em solid skyblue;
+    border-top: 0;
+    position: absolute;
+    left: 5em;
+    display: inline-flex;
+    justify-content: start;
+    height: auto;
+} 
